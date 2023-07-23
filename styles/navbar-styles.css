@@ -1,0 +1,49 @@
+body {
+    border-color: 2px solid black;
+    margin: 0;
+}
+
+.gambarlogo {
+    height:100px;
+}
+.logo {
+    /* background-color: aqua; */ 
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.menu {
+    /* background-color: blueviolet; */
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+} 
+
+.navbar {
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0 0 6px 1px #d1d1d1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 16px;
+}
+
+.menu-items {
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+    padding: 8px;
+    margin: 8px;
+    font-family:'Mulish';
+    font-weight: 700;
+}
+
+a:hover {
+    color: gray;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar, .menu {
+        flex-direction: column;
+    }
+}
