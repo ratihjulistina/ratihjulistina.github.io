@@ -7,7 +7,7 @@ body {
     height:100px;
 }
 .logo {
-    /* background-color: aqua; */ 
+    /* background-color: aqua;  */
     display: flex;
     flex-direction: row;
     justify-content:center;
@@ -20,6 +20,12 @@ body {
     align-items: center;
 } 
 
+.media-icon {
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .navbar {
     border-bottom: 1px solid lightgray;
     box-shadow: 0 0 6px 1px #d1d1d1;
@@ -47,4 +53,9 @@ a:hover {
     .navbar, .menu {
         flex-direction: column;
     }
+}
+
+.image-icon {
+    width: 20px;
+    margin: 0 5px;
 }
