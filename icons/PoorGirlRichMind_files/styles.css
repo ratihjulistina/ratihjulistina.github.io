@@ -51,12 +51,10 @@ li {
   font-size: 18px;
   font-family: "Montserrat";
   font-weight: 100;
-  background-color: white;
-  margin-top: 45px;
 }
 
 .menu a:hover {
-  color: #ffbd59;
+  color: #e9bb31f3;
   /* background: yellow; */
   /* border-radius: 5px; */
   /* transition: 0.3s ease; */
@@ -79,7 +77,6 @@ li {
   display: none;
   border-radius: 4px;
   top: 35px;
-  z-index: 10;
 }
 
 .dropdown li + li {
@@ -122,87 +119,69 @@ input[type="checkbox"] {
   width: 20px;
   margin: 0 5px;
 }
+/* CONTENT STYLES */
 
-/* CONTENT CARD */
-.content-card {
-  margin: 1rem auto;
-  width: 85%;
-  height: 600px;
-  display: grid;
-  grid-template-columns: 68.25% 31.5%;
-  grid-template-rows: 49.75% 49.75%;
-  column-gap: 0.25%;
-  row-gap: 0.5%;
+/* .content-card {
+    mar
+} */
+
+/* .content-image {
+    height: 400px;
+    padding-top: 50px;
 }
 
-/* Post-Card */
+.label-text {
+    font-family:'Lisu Bosa';
+    color: rgb(140, 8, 74);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.title-text {
+    font-family: 'Lato';
+    color: #e9bb31f3;
+    font-size: 20px;
+}
+
+.writer-text {
+    font-family: 'Lisu Bosa';
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.date-text {
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-size: 10px;
+} */
+.example img {
+  width: 40%;
+}
+
+.example::after {
+  content: "Multi-line\00000a text";
+  position: absolute;
+  bottom: 140px;
+  white-space: pre;
+  right: 15px;
+  font-weight: bold;
+  text-align: right;
+  font-size: 30px;
+}
 
 .post-card {
+  width: 400px;
   position: relative;
-  /* background-color: black; */
-  overflow: hidden;
-  background-color: blue;
 }
 .post-card__image {
-  height: 100%;
   width: 100%;
-  filter: brightness(75%);
-  object-fit: cover;
 }
 
 .post-card__text-container {
+  width: 100%;
   position: absolute;
   bottom: 0;
   padding: 1rem;
-}
-
-.post-card__label {
-  margin-bottom: 4px;
-}
-
-.post-card__title {
-  margin-bottom: 8px;
-}
-
-.post-card__label {
-  font-size: 12px;
-  /* color: palevioletred; */
-  font-family: "Montserrat";
-  color: #ffbd59;
-  text-transform: uppercase;
-  font-weight: bolder;
-}
-
-.post-card__title {
-  font-family: "Lato";
-  font-size: 24px;
-  font-weight: 900;
-  color: white;
-}
-
-.post-card__author {
-  font-weight: bold;
-  color: white;
-  font-family: "Montserrat";
-  text-transform: uppercase;
-  font-size: 10px;
-}
-
-.author-post-date-separator {
-  color: white;
-}
-
-.post-card__post-date {
-  color: white;
-  font-family: "Poppins";
-  text-transform: uppercase;
-  font-size: 10px;
-}
-
-/* Post Card Grid */
-
-.post-card-1 {
-  grid-row: span 2;
 }
 
 /* APPLYING MEDIA QUERIES OR CSS GRID AND JS */
@@ -215,7 +194,6 @@ input[type="checkbox"] {
     left: 0;
     text-align: center;
     padding: 50px 0;
-    z-index: 10;
   }
 
   .menu li:hover {
@@ -240,26 +218,9 @@ input[type="checkbox"] {
     left: 50%;
     top: 30px;
     transform: translateX(35%);
-    z-index: 10;
   }
 
   .dropdown li:hover {
     background-color: rgb(244, 240, 240);
-  }
-
-  .content-card {
-    /* display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 45% 20.25% 20.25%;
-    column-gap: 0;
-    row-gap: 0.5%; */
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .post-card {
-    height: 300px;
-    margin-top: 8px;
   }
 }
