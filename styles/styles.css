@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 
-li {
+.menu li {
   list-style: none;
 }
 
@@ -23,9 +23,10 @@ li {
   align-items: center;
   justify-content: space-between;
   padding: 5px;
-  /* background-color: antiquewhite; */
+  background-color: white;
   color: black;
-
+  position: sticky;
+  top: 0px;
   border-bottom: 1px solid lightgray;
   box-shadow: 0 0 6px 1px #d1d1d1;
   display: flex;
@@ -33,6 +34,7 @@ li {
   justify-content: space-between;
   align-items: center;
   padding-right: 16px;
+  z-index: 10;
 }
 
 .nav-links a {
@@ -53,6 +55,7 @@ li {
   font-weight: 100;
   background-color: white;
   /* margin-top: 35px; */
+  /* z-index: 10; */
 }
 
 .menu a:hover {
@@ -206,6 +209,8 @@ input[type="checkbox"] {
   grid-row: span 2;
 }
 
+/* ABOUT */
+
 /* APPLYING MEDIA QUERIES OR CSS GRID AND JS */
 @media (max-width: 768px) {
   .menu {
@@ -215,9 +220,9 @@ input[type="checkbox"] {
     right: 0;
     left: 0;
     text-align: center;
-    padding: 50px 0;
+    padding: 20px 0;
+    margin-top: 43px;
     z-index: 10;
-    margin-top: 45px;
   }
 
   .menu li:hover {
@@ -227,7 +232,7 @@ input[type="checkbox"] {
   }
 
   .menu li + li {
-    margin-top: 12px;
+    margin-top: 6px;
   }
 
   input[type="checkbox"]:checked ~ .menu {
