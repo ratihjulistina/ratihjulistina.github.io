@@ -209,7 +209,81 @@ input[type="checkbox"] {
   grid-row: span 2;
 }
 
-/* ABOUT */
+/* CONTENT CARD MENU */
+.content-card-menu {
+  margin: 1rem auto;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5eae3;
+}
+
+.post-card-menu {
+  height: 300px;
+  margin-top: 8px;
+}
+
+.post-card-menu {
+  position: relative;
+  /* background-color: black; */
+  overflow: hidden;
+  background-color: blue;
+}
+.post-card-menu__image {
+  height: 100%;
+  width: 100%;
+  filter: brightness(75%);
+  object-fit: cover;
+}
+
+.post-card-menu__text-container {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+}
+
+.post-card-menu__label {
+  margin-bottom: 4px;
+}
+
+.post-card-menu__title {
+  margin-bottom: 8px;
+}
+
+.post-card-menu__label {
+  font-size: 12px;
+  /* color: palevioletred; */
+  font-family: "Montserrat";
+  color: #ffbd59;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.post-card-menu__title {
+  font-family: "Lato";
+  font-size: 24px;
+  font-weight: 900;
+  color: white;
+}
+
+.post-card-menu__author {
+  font-weight: bold;
+  color: white;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.author-post-date-separator {
+  color: white;
+}
+
+.post-card-menu__post-date {
+  color: white;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-size: 10px;
+}
 
 /* APPLYING MEDIA QUERIES OR CSS GRID AND JS */
 @media (max-width: 768px) {
