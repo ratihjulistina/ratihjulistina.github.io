@@ -355,4 +355,40 @@ input[type="checkbox"] {
     height: 225px;
     margin-top: 8px;
   }
+  .post-card-menu__title {
+    font-family: "Lato";
+    font-size: 24px;
+    font-weight: 900;
+    color: #ffbd59;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .post-card-menu__author {
+    font-weight: bold;
+    color: grey;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-size: 10px;
+    /* margin-top: 20px; */
+  }
+
+  .author-post-date-separator {
+    color: grey;
+  }
+
+  .post-card-menu__post-date {
+    color: gray;
+    font-family: "Poppins";
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+
+  .post-card-menu__headline {
+    font-family: "Montserrat";
+    /* text-transform: uppercase; */
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 30px;
+  }
 }
