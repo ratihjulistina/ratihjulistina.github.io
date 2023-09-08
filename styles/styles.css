@@ -148,8 +148,8 @@ input[type="checkbox"] {
   background-color: blue;
 }
 .post-card__image {
-  height: 100%;
-  width: 100%;
+  height: 500px;
+  width: 100px;
   filter: brightness(75%);
   object-fit: cover;
 }
@@ -214,75 +214,79 @@ input[type="checkbox"] {
   margin: 1rem auto;
   width: 85%;
   display: flex;
-  flex-direction: column;
-  background-color: #f5eae3;
+  flex-direction: row;
+  /* background-color: #f5eae3; */
+  overflow: hidden;
+  gap: 32px;
 }
 
 .post-card-menu {
   height: 300px;
-  margin-top: 8px;
+  /* margin-top: 8px; */
 }
 
-.post-card-menu {
-  position: relative;
-  /* background-color: black; */
-  overflow: hidden;
-  background-color: blue;
+.post-card-anak-1 {
+  width: 90%;
 }
+
 .post-card-menu__image {
-  height: 100%;
   width: 100%;
-  filter: brightness(75%);
-  object-fit: cover;
+  /* filter: brightness(75%); */
+  /* object-fit: cover; */
 }
 
 .post-card-menu__text-container {
-  position: absolute;
-  bottom: 0;
-  padding: 1rem;
+  /* position: absolute;
+  /* bottom: 50px; */
+  width: 80%;
+  top: 0;
+  right: 0; */
+  padding: 10px;
+  /* background-color: aqua; */
 }
 
-.post-card-menu__label {
+/* .post-card-menu__label {
   margin-bottom: 4px;
-}
+} */
 
-.post-card-menu__title {
-  margin-bottom: 8px;
-}
 
-.post-card-menu__label {
-  font-size: 12px;
-  /* color: palevioletred; */
-  font-family: "Montserrat";
-  color: #ffbd59;
-  text-transform: uppercase;
-  font-weight: bolder;
-}
+
 
 .post-card-menu__title {
   font-family: "Lato";
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 900;
-  color: white;
+  color: #ffbd59;
+  margin-bottom: 5px;
+  display: block;
 }
 
 .post-card-menu__author {
   font-weight: bold;
-  color: white;
+  color: grey;
   font-family: "Montserrat";
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 14px;
+  /* margin-top: 20px; */
 }
 
 .author-post-date-separator {
-  color: white;
+  color: grey;
 }
 
 .post-card-menu__post-date {
-  color: white;
+  color: gray;
   font-family: "Poppins";
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 14px;
+}
+
+.post-card-menu__headline {
+  font-family: "Montserrat";
+  /* text-transform: uppercase; */
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 30px;
 }
 
 /* APPLYING MEDIA QUERIES OR CSS GRID AND JS */
@@ -341,6 +345,17 @@ input[type="checkbox"] {
 
   .post-card {
     height: 300px;
+    margin-top: 8px;
+  }
+
+  .content-card-menu {
+    /* margin: 1rem auto;
+    width: 85%; */
+    display: flex;
+    flex-direction: column;
+  }
+  .post-card-menu {
+    height: 225px;
     margin-top: 8px;
   }
 }

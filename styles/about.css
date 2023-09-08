@@ -2,3 +2,13 @@
   margin: 5%;
   /* background-color: aqua; */
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #000;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  line-height: 2;
+}
