@@ -145,7 +145,7 @@ input[type="checkbox"] {
   position: relative;
   /* background-color: black; */
   overflow: hidden;
-  background-color: blue;
+  /* background-color: blue; */
 }
 .post-card__image {
   height: 500px;
@@ -286,10 +286,9 @@ input[type="checkbox"] {
   line-height: 30px;
 }
 .post-card-menu__action {
-  display: inline;
-  /* padding-right: 0; */
-  margin-left: 100px;
-  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 /* APPLYING MEDIA QUERIES OR CSS GRID AND JS */
@@ -417,12 +416,5 @@ input[type="checkbox"] {
     font-size: 16px;
     margin-top: 10px;
     line-height: 30px;
-  }
-
-  .post-card-menu__action {
-    display: inline;
-    /* padding-right: 0; */
-    margin-left: 55px;
-    /* background-color: aqua; */
   }
 }
