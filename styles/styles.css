@@ -351,18 +351,14 @@ input[type="checkbox"] {
   }
 
   .content-card-menu {
-    /* margin: 1rem auto; */
-    /* width: 100%; */
-    display: flex;
     flex-direction: column;
-    /* background-color: aqua; */
     gap: 0;
   }
 
   .post-card-menu__image {
     /* width: 100%; */
     /* filter: brightness(75%); */
-    /* object-fit: cover; */
+
     /* background-color: aqua; */
   }
 
@@ -380,6 +376,10 @@ input[type="checkbox"] {
     height: 225px;
     margin-top: 8px;
   }
+
+  .post-card-anak-1 {
+  }
+
   .post-card-menu__title {
     font-family: "Lato";
     font-size: 24px;
