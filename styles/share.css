@@ -57,7 +57,7 @@ i {
   transform: scale(1.1);
 }
 
-.span-share {
+span {
   position: absolute;
   z-index: 99;
   width: 240px;
@@ -121,4 +121,11 @@ i {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+.dr {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 100px;
 }
